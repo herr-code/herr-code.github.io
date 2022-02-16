@@ -1,0 +1,172 @@
+h3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* ------------------
+    Workers
+--------------------*/
+.workers{
+    width: 400px;
+    height: 185px;
+    position: relative;
+    margin: 0 auto 0px;
+    background-image: url("../assets/img/workers.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: transparent;
+    background-size: 100%;
+}
+
+.workers .left_hand{
+    width: 80px;
+    height: 74px;
+    background-image: url("../assets/img/hand.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: transparent;
+    background-size: 100%;
+    position: absolute;
+    left: 102px;
+    top: 29px;
+    z-index: 2;
+    -moz-animation: 0.4s ease 0s normal none infinite left_hand;
+    -moz-transform-origin: 85% 65%;
+    -webkit-animation:left_hand 0.4s infinite ease-in-out;
+    -webkit-transform-origin: 85% 65%;
+    -o-animation: 0.4s ease 0s normal none infinite left_hand;
+    -o-animation:left_hand 0.4s infinite ease-in-out;
+    -o-transform-origin: 85% 65%;
+    -ms-animation: 0.4s ease 0s normal none infinite left_hand;
+    -ms-animation:left_hand 0.4s infinite ease-in-out;
+    -ms-transform-origin: 85% 65%;
+    animation: 0.4s ease 0s normal none infinite left_hand;
+    animation:left_hand 0.4s infinite ease-in-out;
+    transform-origin: 85% 65%;
+}
+
+@-moz-keyframes left_hand {
+    0%{-moz-transform:rotate(-23deg)}
+    50%{-moz-transform:rotate(1deg)}
+    100%{-moz-transform:rotate(-23deg)}
+}
+
+@-webkit-keyframes left_hand {
+    0%{-webkit-transform:rotate(-23deg)}
+    50%{-webkit-transform:rotate(1deg)}
+    100%{-webkit-transform:rotate(-23deg)}
+}
+
+@-o-keyframes left_hand {
+    0%{-o-transform:rotate(-23deg)}
+    50%{-o-transform:rotate(1deg)}
+    100%{-o-transform:rotate(-23deg)}
+}
+
+@-ms-keyframes left_hand {
+    0%{-ms-transform:rotate(-23deg)}
+    50%{-ms-transform:rotate(1deg)}
+    100%{-ms-transform:rotate(-23deg)}
+}
+
+@keyframes left_hand {
+    0%{transform:rotate(-23deg)}
+    50%{transform:rotate(1deg)}
+    100%{transform:rotate(-23deg)}
+}
+
+.workers .right_hand{
+    width: 73px;
+    height: 87px;
+    position: absolute;
+    background-image: url("../assets/img/hand2.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-color: transparent;
+    background-size: 100%;
+    right: 125px;
+    top: -7px;
+    -moz-animation: 0.5s ease 0s normal none infinite right_hand;
+    -moz-transform-origin: 15% 85%;
+    -webkit-animation:right_hand 0.5s infinite ease-in-out;
+    -webkit-transform-origin: 15% 85%;
+    -o-animation: 0.5s ease 0s normal none infinite right_hand;
+    -o-animation:right_hand 0.5s infinite ease-in-out;
+    -o-transform-origin: 15% 85%;
+    -ms-animation: 0.5s ease 0s normal none infinite right_hand;
+    -ms-animation:right_hand 0.5s infinite ease-in-out;
+    -ms-transform-origin: 15% 85%;
+    animation: 0.5s ease 0s normal none infinite right_hand;
+    animation:right_hand 0.5s infinite ease-in-out;
+    transform-origin: 15% 85%;
+}
+@-moz-keyframes right_hand {
+    0%{-moz-transform:rotate(55deg)}
+    50%{-moz-transform:rotate(1deg)}
+    100%{-moz-transform:rotate(55deg)}
+}
+
+@-webkit-keyframes right_hand {
+    0%{-webkit-transform:rotate(55deg)}
+    50%{-webkit-transform:rotate(1deg)}
+    100%{-webkit-transform:rotate(55deg)}
+}
+
+@-o-keyframes right_hand {
+    0%{-o-transform:rotate(55deg)}
+    50%{-o-transform:rotate(1deg)}
+    100%{-o-transform:rotate(55deg)}
+}
+
+@-ms-keyframes right_hand {
+    0%{-ms-transform:rotate(55deg)}
+    50%{-ms-transform:rotate(1deg)}
+    100%{-ms-transform:rotate(55deg)}
+}
+
+@keyframes right_hand {
+    0%{transform:rotate(55deg)}
+    50%{transform:rotate(1deg)}
+    100%{transform:rotate(55deg)}
+}
+
+/* Start media ( max = 468px ) */
+@media (max-width: 468px) {
+    .workers {
+        width: 290px;
+        height: 125px;
+        margin: 40px auto 0px;
+    }
+    .workers .right_hand {
+        width: 52px;
+        height: 65px;
+        right: 93px;
+        top: -10px;
+    }
+    .workers .left_hand {
+        width: 53px;
+        height: 48px;
+        left: 77px;
+        top: 18px;
+    }
+}
+
+@media (max-width: 280px) {
+    .workers {
+        width: 220px;
+        height: 115px;
+        /*margin: 40px 0px 0px;*/
+        overflow: hidden;
+    }
+    .workers .right_hand {
+        width: 48px;
+        height: 60px;
+        right: 65px;
+        top: 3px;
+    }
+    .workers .left_hand {
+        width: 48px;
+        height: 48px;
+        left: 50px;
+        top: 21px;
+    }
+}
